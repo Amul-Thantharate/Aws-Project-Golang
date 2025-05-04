@@ -1,0 +1,33 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "s3:*"
+        ],
+        "Resource": [
+          "arn:aws:s3:::REPLACEME-processed",
+          "arn:aws:s3:::REPLACEME-processed/*",
+          "arn:aws:s3:::REPLACEME-source/*",
+          "arn:aws:s3:::REPLACEME-source"
+        ]
+      },
+      {
+        "Effect": "Allow",
+        "Action": "logs:CreateLogGroup",
+        "Resource": "arn:aws:logs:us-east-1:YOURACCOUNTID:*"
+      },
+      {
+        "Effect": "Allow",
+        "Action": [
+          "logs:CreateLogStream",
+          "logs:PutLogEvents"
+        ],
+        "Resource": [
+          "arn:aws:logs:us-east-1:YOURACCOUNTID:log-group:/aws/lambda/pixelator:*"
+        ]
+      }
+    ]
+  }
+  

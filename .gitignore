@@ -1,0 +1,60 @@
+# Go
+*.exe
+*.test
+*.out
+*.so
+*.a
+*.o
+*.h
+*.pdb
+*.dll
+*.dylib
+
+# Go build cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.pyc
+
+# Go modules
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# AWS Lambda
+bootstrap
+function.zip
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# Build artifacts
+dist/
+build/
+
+# Local development
+.local/
+
+# Testing
+coverage/
+
+# AWS credentials
+.aws/
+credentials
+config
