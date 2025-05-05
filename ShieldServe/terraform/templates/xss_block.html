@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>XSS Blocked</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+    .alert { color: #f0ad4e; }
+    code { background: #f5f5f5; padding: 2px 5px; }
+  </style>
+</head>
+<body>
+  <h1 class="alert">XSS Attempt Blocked</h1>
+  <p>Detected malicious script in input:</p>
+  <p><code>${aws:waf:matchedPattern}</code></p>
+</body>
+</html>
