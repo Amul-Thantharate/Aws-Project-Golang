@@ -1,6 +1,6 @@
-# 🚀 AWS Projects with Golang
+# 🚀 AWS Projects with Golang And Terraform
 
-Welcome to our collection of AWS projects built with Golang! 🐙 This repository contains multiple AWS integrations and services implemented using the Go programming language.
+Welcome to our collection of AWS projects built with Golang! 🐙 This repository contains multiple AWS integrations and services implemented using the Go programming language. Golang, known for its simplicity, efficiency, and strong concurrency support, makes it an excellent choice for building cloud-native applications. Combined with Terraform, the industry-leading Infrastructure as Code (IaC) tool, we can create, manage, and version our cloud infrastructure with declarative configuration files.
 
 ## 📋 Table of Contents
 
