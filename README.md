@@ -5,6 +5,7 @@ Welcome to our collection of AWS projects built with Golang! 🐙 This repositor
 ## 📋 Table of Contents
 
 - [Overview](#overview)
+- [Projects](#projects)
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
@@ -16,19 +17,27 @@ This repository showcases various AWS projects implemented using Golang, demonst
 
 ## 📦 Projects
 
-### 1. LumaBot 🤖
-A powerful AWS Lambda-based chatbot that integrates with multiple AWS services for intelligent responses and automation.
+### 1. ShieldServe 🛡️
+A security-focused web application infrastructure deployed on AWS. It provides robust protection against common web vulnerabilities (SQLi, XSS, LFI) through AWS WAF with custom responses, while offering high availability via auto-scaling and comprehensive security logging. Features include:
+- Custom WAF responses for different attack types
+- Comprehensive logging with S3, CloudWatch, and Kinesis Firehose
+- Security dashboard for real-time monitoring
+- Containerized application with Docker and ECR
+- Auto-scaling EC2 instances with t3.micro for optimal performance
 
-### 2. PixlFlow 🎨
-An image processing pipeline using AWS services for scalable image transformations and storage.
+### 2. LumaBot 🤖
+LumaBot is a cutting-edge AI platform that seamlessly integrates multiple AI capabilities into one powerful application. It leverages Groq's ultra-fast LLM for intelligent conversations and precise image analysis, while harnessing Azure OpenAI's DALL-E for stunning image generation. With an intuitive Streamlit interface, it offers real-time chat interactions, detailed image analysis, and creative image generation - all while maintaining a complete history of your AI interactions.
 
-### 3. Lambda X-Ray Event 📊
-A monitoring and tracing solution that uses AWS X-Ray for detailed insights into Lambda function performance.
+### 3. PixlFlow 🎨
+PixlFlow is a Go application that processes images with various transformations including blurring, upscaling, and pixelation effects. It can run locally or be deployed as an AWS Lambda function triggered by S3 uploads.
 
-### 4. GoServerlessCurd (DynamoDB) 📊
+### 4. Lambda X-Ray Event 📊
+This project is an AWS Lambda function that demonstrates how to use AWS X-Ray for tracing and monitoring HTTP requests. The function fetches random dog images from the Dog API, saves them to an S3 bucket, and returns the image URL. 🚀
+
+### 5. GoServerlessCRUD (DynamoDB) 📊
 GoServerlessCRUD is a serverless backend application written in Go that provides a simple and scalable CRUD (Create, Read, Update, Delete) API. It uses AWS Lambda for serverless compute, API Gateway for HTTP endpoints, and DynamoDB for persistent NoSQL storage. This project is ideal for building fast, low-maintenance APIs with minimal infrastructure overhead.
 
-## 🛠️ Prerequisites
+## 🔧️ Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -36,6 +45,7 @@ Before you begin, ensure you have the following installed:
 - AWS CLI v2 🔐
 - Docker 🐋 (for containerized deployments)
 - Git 🌱
+- Terraform v1.0.0+ 🛠️ (for infrastructure as code)
 
 ### AWS Setup Requirements
 
@@ -57,20 +67,35 @@ cd Aws-Project-Golang
 aws configure
 ```
 
-3. Install Go dependencies:
+3. Choose a project directory and navigate to it:
 ```bash
-go mod tidy
+cd <project-name>  # e.g., cd ShieldServe
 ```
-4. Choose a project and follow its specific setup instructions
 
-## 🛠️ Prerequisites
+4. Follow the project-specific README.md for detailed setup instructions
 
-Before running these projects, make sure you have:
+### Project-Specific Setup
 
-- Go 1.20+ installed
-- AWS CLI configured with appropriate credentials
-- AWS SDK for Go v2
-- Docker (for containerized deployments)
+#### ShieldServe
+```bash
+cd ShieldServe/terraform
+terraform init
+terraform apply
+```
+
+#### GoServerlessCRUD
+```bash
+cd GoServerlessCRUD
+go mod tidy
+# Follow deployment instructions in the project README
+```
+
+#### LumaBot
+```bash
+cd LumaBot
+go mod tidy
+# Follow deployment instructions in the project README
+```
 
 ## 🤝 Contributing
 
