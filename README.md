@@ -37,6 +37,10 @@ This project is an AWS Lambda function that demonstrates how to use AWS X-Ray fo
 ### 5. GoServerlessCRUD (DynamoDB) 📊
 GoServerlessCRUD is a serverless backend application written in Go that provides a simple and scalable CRUD (Create, Read, Update, Delete) API. It uses AWS Lambda for serverless compute, API Gateway for HTTP endpoints, and DynamoDB for persistent NoSQL storage. This project is ideal for building fast, low-maintenance APIs with minimal infrastructure overhead.
 
+### 6. Terraform Transit Gateway Peering 🌉
+This project demonstrates how to use Terraform to create a Transit Gateway Peering between two VPCs in different AWS accounts. It's a great way to connect resources across multiple AWS accounts and regions.
+
+
 ## 🔧️ Prerequisites
 
 Before you begin, ensure you have the following installed:
@@ -95,6 +99,20 @@ go mod tidy
 cd LumaBot
 go mod tidy
 # Follow deployment instructions in the project README
+```
+
+#### PixlFlow
+```bash
+    cd PixlFlow
+    terraform init
+    terraform apply
+```
+
+#### Lambda X-Ray Event
+```bash
+    cd Lambda-xray-event
+    go mod tidy
+    # Follow deployment instructions in the project README
 ```
 
 ## 🤝 Contributing
