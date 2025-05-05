@@ -58,63 +58,6 @@ Before you begin, ensure you have the following installed:
 3. AWS Access Key ID and Secret Access Key 🔑
 4. AWS Region Configuration 🗺️
 
-## 🚀 Getting Started
-
-1. Clone the repository:
-```bash
-git clone https://github.com/Amul-Thantharate/Aws-Project-Golang.git
-cd Aws-Project-Golang
-```
-
-2. Set up your AWS credentials:
-```bash
-aws configure
-```
-
-3. Choose a project directory and navigate to it:
-```bash
-cd <project-name>  # e.g., cd ShieldServe
-```
-
-4. Follow the project-specific README.md for detailed setup instructions
-
-### Project-Specific Setup
-
-#### ShieldServe
-```bash
-cd ShieldServe/terraform
-terraform init
-terraform apply
-```
-
-#### GoServerlessCRUD
-```bash
-cd GoServerlessCRUD
-go mod tidy
-# Follow deployment instructions in the project README
-```
-
-#### LumaBot
-```bash
-cd LumaBot
-go mod tidy
-# Follow deployment instructions in the project README
-```
-
-#### PixlFlow
-```bash
-    cd PixlFlow
-    terraform init
-    terraform apply
-```
-
-#### Lambda X-Ray Event
-```bash
-    cd Lambda-xray-event
-    go mod tidy
-    # Follow deployment instructions in the project README
-```
-
 ## 🤝 Contributing
 
 We welcome contributions! Please feel free to:
