@@ -66,11 +66,12 @@ PixlFlow is a Go application that processes images with various transformations 
    - Replace `<region>` with your AWS region
    - Replace `source-bucket-name` and `destination-bucket-name` with your S3 bucket names
    - Replace `<unique-statement-id>` with a unique identifier
+   - Replace `<Bucket-name> in the provider block` with your S3 bucket name
 
 2. Run the deployment script:
    ```
-   chmod +x bash.sh
-   ./bash.sh
+   terraform init
+   terraform apply
    ```
 
 3. Upload images to your source S3 bucket to trigger processing
