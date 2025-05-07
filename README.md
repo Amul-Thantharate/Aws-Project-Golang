@@ -40,6 +40,8 @@ GoServerlessCRUD is a serverless backend application written in Go that provides
 ### 6. Terraform Transit Gateway Peering 🌉
 This project demonstrates how to use Terraform to create a Transit Gateway Peering between two VPCs in different AWS accounts. It's a great way to connect resources across multiple AWS accounts and regions.
 
+### 7. Sftp-Transfer-Family-Terraform
+This project sets up a secure SFTP server using AWS Transfer Family, managed with Terraform. It provides a fully managed SFTP service that automatically scales based on your needs.
 
 ## 🔧️ Prerequisites
 
