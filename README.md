@@ -43,6 +43,9 @@ This project demonstrates how to use Terraform to create a Transit Gateway Peeri
 ### 7. Sftp-Transfer-Family-Terraform
 This project sets up a secure SFTP server using AWS Transfer Family, managed with Terraform. It provides a fully managed SFTP service that automatically scales based on your needs.
 
+### 8. SecureCertAccess 🔒
+IAM Roles Anywhere allows on-premises servers, containers, and applications to use X.509 certificates to obtain temporary AWS credentials. This eliminates the need to manage long-term AWS credentials outside of AWS.
+
 ## 🔧️ Prerequisites
 
 Before you begin, ensure you have the following installed:
