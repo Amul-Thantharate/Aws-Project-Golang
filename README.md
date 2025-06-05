@@ -25,28 +25,25 @@ A security-focused web application infrastructure deployed on AWS. It provides r
 - Containerized application with Docker and ECR
 - Auto-scaling EC2 instances with t3.micro for optimal performance
 
-### 2. LumaBot 🤖
-LumaBot is a cutting-edge AI platform that seamlessly integrates multiple AI capabilities into one powerful application. It leverages Groq's ultra-fast LLM for intelligent conversations and precise image analysis, while harnessing Azure OpenAI's DALL-E for stunning image generation. With an intuitive Streamlit interface, it offers real-time chat interactions, detailed image analysis, and creative image generation - all while maintaining a complete history of your AI interactions.
-
-### 3. PixlFlow 🎨
+### 2. PixlFlow 🎨
 PixlFlow is a Go application that processes images with various transformations including blurring, upscaling, and pixelation effects. It can run locally or be deployed as an AWS Lambda function triggered by S3 uploads.
 
-### 4. Lambda X-Ray Event 📊
+### 3. Lambda X-Ray Event 📊
 This project is an AWS Lambda function that demonstrates how to use AWS X-Ray for tracing and monitoring HTTP requests. The function fetches random dog images from the Dog API, saves them to an S3 bucket, and returns the image URL. 🚀
 
-### 5. GoServerlessCRUD (DynamoDB) 📊
+### 4. GoServerlessCRUD (DynamoDB) 📊
 GoServerlessCRUD is a serverless backend application written in Go that provides a simple and scalable CRUD (Create, Read, Update, Delete) API. It uses AWS Lambda for serverless compute, API Gateway for HTTP endpoints, and DynamoDB for persistent NoSQL storage. This project is ideal for building fast, low-maintenance APIs with minimal infrastructure overhead.
 
-### 6. Terraform Transit Gateway Peering 🌉
+### 5. Terraform Transit Gateway Peering 🌉
 This project demonstrates how to use Terraform to create a Transit Gateway Peering between two VPCs in different AWS accounts. It's a great way to connect resources across multiple AWS accounts and regions.
 
-### 7. Sftp-Transfer-Family-Terraform
+### 6. Sftp-Transfer-Family-Terraform
 This project sets up a secure SFTP server using AWS Transfer Family, managed with Terraform. It provides a fully managed SFTP service that automatically scales based on your needs.
 
-### 8. SecureCertAccess 🔒
+### 7. SecureCertAccess 🔒
 IAM Roles Anywhere allows on-premises servers, containers, and applications to use X.509 certificates to obtain temporary AWS credentials. This eliminates the need to manage long-term AWS credentials outside of AWS.
 
-### 9. SecureUpload 🛡️📤
+### 8. SecureUpload 🛡️📤
 A secure file upload solution using AWS S3 with GuardDuty malware protection. It includes a Go web application for handling file uploads and Terraform configurations for setting up the required AWS infrastructure with security best practices. Features include:
 - GuardDuty malware scanning for all S3 uploads
 - Server-side encryption for all stored files
