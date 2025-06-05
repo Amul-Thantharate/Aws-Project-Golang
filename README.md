@@ -46,6 +46,14 @@ This project sets up a secure SFTP server using AWS Transfer Family, managed wit
 ### 8. SecureCertAccess 🔒
 IAM Roles Anywhere allows on-premises servers, containers, and applications to use X.509 certificates to obtain temporary AWS credentials. This eliminates the need to manage long-term AWS credentials outside of AWS.
 
+### 9. SecureUpload 🛡️📤
+A secure file upload solution using AWS S3 with GuardDuty malware protection. It includes a Go web application for handling file uploads and Terraform configurations for setting up the required AWS infrastructure with security best practices. Features include:
+- GuardDuty malware scanning for all S3 uploads
+- Server-side encryption for all stored files
+- Public access blocking for S3 bucket
+- Least privilege IAM permissions
+- Malware detection and alerting
+
 ## 🔧️ Prerequisites
 
 Before you begin, ensure you have the following installed:

@@ -1,0 +1,3 @@
+aws_region   = "us-east-1"
+project_name = "s3-file-upload"
+environment  = "dev"
